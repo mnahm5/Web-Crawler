@@ -4,11 +4,12 @@ from spider import Spider
 from domain import *
 from general import *
 
-PROJECT_NAME = "thenewboston"
-HOMEPAGE = "https://thenewboston.com/"
+PROJECT_NAME = "<Whatever you want to name the folder>"
+HOMEPAGE = "<The name of the homepage>"
 DOMAIN_NAME = get_domain_name(HOMEPAGE)
 QUEUE_FILE = PROJECT_NAME + '/queue.txt'
 CRAWLED_FILE = PROJECT_NAME + '/crawled.txt'
+# You can use any number of threads that your operating system can handle, More Threads = More Speed
 NUMBER_OF_THREADS = 4
 queue = Queue()
 Spider(PROJECT_NAME, HOMEPAGE, DOMAIN_NAME)
